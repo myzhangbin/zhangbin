@@ -1,0 +1,9 @@
+    {
+      "name": "wangshu",
+      "script": "start_server.py",
+      "min_uptime": "60s",
+      "max_restarts": 30,
+      "error_file" : "/var/log/zhangbin/zhangbn-error.log",
+      "out_file": "/var/log/zhangbin/zhangbn-out.log",
+      "watch": false
+    }
