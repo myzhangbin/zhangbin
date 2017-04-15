@@ -7,11 +7,55 @@
 #Container{
     width:1000px;
     margin:0 auto;/*设置整个容器在浏览器中水平居中*/
-    background:#CF3;
+    /*background:#CF3;*/
 }
-#Header{
+
+#Header1{
     height:80px;
-    background:#093;
+    margin: 20px;
+
+    /*background:#093;*/
+}
+
+#Header2{
+    height:80px;
+    background-image: url("static/header.jpg");
+    background-repeat: no-repeat;
+    margin-top: 40px;
+    /*background:#093;*/
+}
+
+.Header3{
+    margin:0; 
+    border:0; 
+    padding:0; 
+    margin-bottom: 20px;
+    font-size:13pt;
+    float: right;
+}
+.Header3 li {
+    display: inline;
+    margin-right:45px; 
+
+}
+.Header4 {
+    /*width:720px;*/
+    margin:20px;/*设置元素跟其他元素的距离为20像素*/
+    float:none;/*设置浮动，实现多列效果，div+Css布局中很重要的*/
+}
+
+/*nav{height:40px;border-top:#060 2px solid;border-bottom:#060 2px solid;background-color:#690;}
+#nav ul{list-style:none;margin-left:50px;}
+#nav li{display:inline;line-height:40px;}*/
+
+.navbar-nav {
+    margin: 7.5px -15px;
+}
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    /*display: inline;*/
 }
 #logo{
     padding-left:50px;
@@ -22,7 +66,7 @@
     overflow:auto;
     /*此处对容器设置了高度，一般不建议对容器设置高度，一般使用overflow:auto;属性设置容器根据内容自适应高度，如果不指定高度或不设置自适应高度，容器将默认为1个字符高度，容器下方的布局元素（footer）设置margin-top:属性将无效*/
     margin-top:20px;/*此处讲解margin的用法，设置content与上面header元素之间的距离*/
-    background:#0FF;
+    /*background:#0FF;*/
      
 }
 #Content-Left{
@@ -30,7 +74,7 @@
     width:200px;
     /*margin:20px;设置元素跟其他元素的距离为20像素*/
     float:left;/*设置浮动，实现多列效果，div+Css布局中很重要的*/
-    background:#90C;
+    /*background:#90C;*/
     font-size: 20px;
     text-align: center;
 
@@ -39,40 +83,40 @@
     /*height:400px;*/
     width:200px;
     /*margin:20px;设置元素跟其他元素的距离为20像素*/
-    background:#44C;
+    /*background:#44C;*/
     margin-top: 15px;
     text-decoration:none;
     color:#070000;
     cursor:pointer;
-    background-color:#00d030;
+    /*background-color:#00d030;*/
 }
 #Content-Left2{
     /*height:400px;*/
     width:200px;
     /*margin:20px;设置元素跟其他元素的距离为20像素*/
-    background:#63C;
+    /*background:#63F;*/
     margin-top: 15px;
     text-decoration:none;
     color:#001000;
     cursor:pointer;
-    background-color:#010030;
+    /*background-color:#010030;*/
 }
 #Content-Left3{
     /*height:400px;*/
     width:200px;
     /*margin:20px;设置元素跟其他元素的距离为20像素*/
-    background:#32C;
+    /*background:#32E;*/
     margin-top: 15px;
     text-decoration:none;
     color:#000030;
     cursor:pointer;
-    background-color:#000030;
+    /*background-color:#000030;*/
 }
 #Content-Left4{
     /*height:400px;*/
     width:200px;
     /*margin:20px;设置元素跟其他元素的距离为20像素*/
-    background:#91C;
+    /*background:#91C;*/
     margin-bottom: 40px;
     font-size: 15px;
 }
@@ -87,13 +131,29 @@
     float:left;/*设置浮动，实现多列效果，div+Css布局中很重要的*/
     
 }
+#Content-Main1{
+    /*height:400px;*/
+    width:720px;
+    margin:20px;/*设置元素跟其他元素的距离为20像素*/
+    float:left;/*设置浮动，实现多列效果，div+Css布局中很重要的*/
+    
+}
+#Content-Main2{
+    /*height:400px;*/
+    width:1000px;
+    margin:20px;/*设置元素跟其他元素的距离为20像素*/
+    float:left;/*设置浮动，实现多列效果，div+Css布局中很重要的*/
+    margin-top: 20px;
+    margin-bottom: 40px;
+    
+}
 /*注：Content-Left和Content-Main元素是Content元素的子元素，两个元素使用了float:left;设置成两列，这个两个元素的宽度和这个两个元素设置的padding、margin的和一定不能大于父层Content元素的宽度，否则设置列将失败*/
 #Content-Main-Left1{
     /*height:400px;*/
     width:300px;
     /*margin:20px;设置元素跟其他元素的距离为20像素*/
     float:left;/*设置浮动，实现多列效果，div+Css布局中很重要的*/
-    background:#90C;
+    /*background:#90C;*/
 }
 #Content-Main-Left2{
     /*height:400px;*/
@@ -101,7 +161,7 @@
     /*margin:20px;设置元素跟其他元素的距离为20像素*/
     float:left;/*设置浮动，实现多列效果，div+Css布局中很重要的*/
     margin-left: 80px;
-    background:#90F;
+    /*background:#90F;*/
 
 }
 #Footer{
@@ -119,9 +179,19 @@
  
 <body>
 <div id="Container">
-    <div id="Header">
-        <div id="logo">存放网站log标志，整个网站的风格，背景图片未设置，内容填充，先进行分块布局</div>
-    </div>
+    <!-- <div class="Header4"> -->
+        <div class="Header1">
+            <ul class="Header3 nav navbar-nav">
+                <li>选项1</li>
+                <li>选项2</li>
+                <li>选项3</li>
+                <li>选项4</li>
+            </ul>
+        </div>
+        <div id="Header2">
+            <div id="logo">存放网站log标志，整个网站的风格，背景图片未设置，内容填充，先进行分块布局</div>
+        </div>
+    <!-- </div> -->
     <div id="Content">
         <div id="Content-Left">
         	<a id="Content-Left1" href="http://www.wangshu.site/Info" ><pre>公司信息</pre></a><br>
@@ -133,23 +203,79 @@
 
         </div>
         <div id="Content-Main">
-        	<div id="Content-Main-Left1">
-        		<h1>简介(下面是内容)</h1>
-				<p>
-					恍恍惚惚恍恍惚惚恍恍惚惚哈哈哈
-				</p>
-				<p>
-					恍恍惚惚恍恍惚惚恍恍惚惚哈哈哈红红火火恍恍惚惚红红火火
-				</p>
-        	</div>
-        	<div id="Content-Main-Left2">
-        		<h1>测试(下面是内容)</h1>
-				<p>
-					我们是。。。。。。。。。。。。。。。。
-				</p>
-				<p>
-					选择我们。。。。。。。。。。。
-        	</div>
+            <div id="Content-Main1">
+            	<div id="Content-Main-Left1">
+            		<h1>简介(AWS)</h1>
+    				<p>
+    					AWS 是业务流程管理开发平台AWS Enterprise BPM Platform 业务流程管理开发平台.
+    				</p>
+    				<p>
+    					
+AWS BPM为快速实施新应用提供了完整的业务流程应用建模工具，而开发员可以通过这些工具非编程方式快速设计和变更用户商业模型，并通过模型迁移安装工具打包成自己的BPM解决方案。AWS BPM卓越的技术超越了传统的集成和业务流程管理所能提供的解决方案，为企业提供了一款多用途平台化软件，从而利用单一AWS的产品线就可以满足企业对协同、流程管理、快速构建新应用的核心需求
+    				</p>
+            	</div>
+            	<div id="Content-Main-Left2">
+            		<h1>简介(阿里云)</h1>
+<!--     				<p>
+    					我们是。。。。。。。。。。。。。。。。
+    				</p> -->
+    				<p>
+    					阿里云，阿里巴巴集团旗下云计算品牌，全球卓越的云计算技术和服务提供商。创立于2009年，在杭州、北京、硅谷等地设有研发中心和运营机构。
+                    </p>
+            	</div>
+            </div>
+            <div id="Content-Main2">
+                <div id="Content-Main-Left1">
+                    <h1>简介(下面是内容)</h1>
+                    <p>
+                        id, class, title, style, dir, lang, xml:lang 如需完整的描述，请访问标准属性。
+                    </p>
+                    <p>
+                        color : #999999 文字颜色
+                    </p>
+                    <p>
+                        font-family :宋体文字字型
+                    </p>
+                    <p>
+                        font-size: 10px 文字大小
+                    </p>
+                    <p>
+                        font-style:italic 文字斜体
+                    </p>
+                    <p>
+                        font-variant:small-caps 小字体
+                    </p>
+                    <p>
+                        letter-spacing: 1px 文字间距
+                    </p>
+                    <p>
+                        line-height: 200% 设定行高
+                    </p>
+                    <p>
+                        font-weight:bold 文字粗体
+                    </p>
+                    <p>
+                        vertical-align:sub 下标字
+                    </p>
+                    <p>
+                        vertical-align:super 上标字
+                    </p>
+                    <p>
+                        text-decoration:line-through 加删除线
+                    </p>
+
+                </div>
+                <div id="Content-Main-Left2">
+                    <h1>张国荣</h1>
+                    <p>
+                        张国荣，1956年9月12日生于香港，歌手、演员、音乐人；影视歌多栖发展的代表之一。
+                    </p>
+                    <p>
+                        
+1977年正式出道。1983年以《风继续吹》成名。1984年演唱的《Monica》是香港歌坛第一支同获十大中文金曲、十大劲歌金曲的舞曲[1-2]  。 1986年、1987年获劲歌金曲金奖。1987年凭借专辑《爱慕》成为首位打入韩国音乐市场的粤语歌手[3]  ，华语唱片在韩国销量纪录保持者[4-5]  。1988年、1989年获十大劲歌金曲最受欢迎男歌星奖。1995年专辑《宠爱》在韩国创销量纪录[5-7]  。1999年获得香港乐坛最高荣誉奖金针奖。2000年获CCTV-MTV音乐盛典亚洲最杰出艺人奖[8]  。2010年入选美国CNN评出的“过去五十年里全球最知名的20位歌手或者乐团”[9]  。他擅长词曲创作，亦担任过MTV导演、唱片监制、演唱会艺术总监等。
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
     <div class="Clear"><!--如何你上面用到float,下面布局开始前最好清除一下。--></div>
